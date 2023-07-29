@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="exp">
+    <button onclick="count()">Решить</button>
+    <div id="result"></div>
+    
+    <script>
+        function count(){
+
+            var calc = document.getElementById('exp').value;
+
+            var result = document.getElementById('result');
+
+            result.innerHTML = eval(calc);
+
+        }
+    </script>
+
+</body>
+
+</html>
